@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CV Annisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- make all anchor open in new page -->
+    <base target="_blank">
+</head>
+<body>
+    <div id="page">
+        <aside>
+            <div id="avatar">
+                <img src="img/cca.jpeg" alt="avatar_img"/>
+                <div id="name_area">
+                    <p id="name"><span>A</span>nnisa <span>Nasywa </span> Ayuni</p>
+                    <p id="desc">Pelajar</p>
+                </div>
+            </div>
+            
+            <section id="last_update">
+                <p>CV update: <time>Feb 21, 2025</time></p>
+            </section>
+            
+            <section id="about">
+                <header>Tentang</header>
+                <p>
+                    Seorang pelajar yang rajin dan berorientasi pada perkembangan diri. 
+                    Memiliki minat dalam bidang pemrograman. 
+                    Aktif dalam kegiatan sekolah dan mampu bekerja sama dalam tim.
+                    Selalu berusaha mencapai hasil terbaik dalam setiap tugas yang diberikan.
+
+                </p>
+            </section>
+            
+            <section id="contact">
+                <header>Kontak</header>
+                <div class="contact_list">
+                    <i class="material-icons">phone</i>
+                    <span>(+62) 813-1368-8413</span>
+                </div>
+                <div class="contact_list">
+                    <i class="material-icons">gmail</i>
+                    <span>annisa.nasywa191@smk.belajar.id</span>
+                </div>
+                <div class="contact_list">
+                    <i class="material-icons">place</i>
+                    <span>Panjalu</span>
+                </div>
+            </section>
+
+            <section id="education">
+                <header>Pendidikan</header>
+                    <li>SMKN 1 Kawali: 2023-2026</li>
+                    <li>MTSs Nurul Huda Al-Husna: 2020-2023</li>
+                    <li>SDN 2 Rawa: 2014-2020</li>
+                </ul>
+            </section>
+                    <!-- <li>
+                        <a href="#">
+                            <img src="img/social_fb.png" alt=""/>
+                            <p>facebook.com/facebook_id</p>
+                        </a>
+                    </li> -->
+                </ul>
+            </section>
+            
+            <section id="hobby">
+                <header>Sosial Media</header>
+                <div id="hobby_list">
+                    <div class="hobby_item">
+                        <img src="img/ig.jpg" alt=""/>
+                        <p>@_ansywa</p>
+                    </div>
+                    <div class="hobby_item">
+                        <img src="img/tt.jpg" alt=""/>
+                        <p>@sunvrlightt</p>
+                </div>
+            </section>
+        </aside>
+        <main>
+            <section id="work_exp">
+                <header>Pengalaman Organisasi</header>
+                <div class="exp_item">
+                    <div class="exp_time">
+                        <time>2024 - Sekarang </time>
+                    </div>
+                    <div class="exp_desc">
+                        <header><b>Sekretaris</b>, di Himpunan PPLG</header>
+                        
+                    </div>
+                </div>
+                <div class="exp_item">
+                    <div class="exp_time">
+                        <time>2022 - 2023 </time>
+                    </div>
+                    <div class="exp_desc">
+                        <header><b>Wakil Ketua Osis</b>, di MTSs Nurul Huda Al-Husna</header>
+                        <p>Selama satu periode</p>
+                        
+                    </div>
+                </div>
+                <div class="exp_item">
+                    <div class="exp_time">
+                        <time>2022 - 2023 </time>
+                    </div>
+                    <div class="exp_desc">
+                        <header><b>Dewan Penggalang</b>, di MTSs Nurul Huda Al-Husna</header>
+                        <p><i>Selama satu periode</i></p>
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="personal_exp">
+                <header>Pengalaman & Penghargaan</header>
+                <div class="exp_item">
+                    <div class="exp_time">
+                        <time>2022</time>
+                    </div>
+                    <div class="exp_desc">
+                        <header><b>-Lomba LT 2 (juara harapan 1)</b></header>
+                    
+                    </div>
+                </div>
+                <div class="exp_item">
+                    <div class="exp_time">
+                        <time>2022</time>
+                    </div>
+                    <div class="exp_desc">
+                        <header><b>-Lomba Volly Ball</b></header>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <header>Hard Skills & Soft Skills</header>
+                <div id="tech_skills">
+                    <div class="skill_group">
+                        <h4>Hard Skills</h4>
+                        <ul>
+                            <li>Canva (Mahir)</li>
+                            <li>HTML (Menengah)</li>
+                            <li>PHP (Menengah)</li>
+                            <li>Laravel (Pemula)</li>
+                            <li>Basis Data (Menengah)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill_group" style="clear: left">
+                        <h4>Soft Skills</h4>
+                        <ul>
+                            <li>Manajemen Waktu</li>
+                            <li>Kemampuan Beradaptasi</li>
+                            <li>Percaya Diri</li>
+                        </ul>
+                    </div>
+    <!-- js script here -->
+    <script>
+        setTimeout(function() {
+            var aside_element = document.getElementsByTagName('aside')[0];
+            var main_element = document.getElementsByTagName('main')[0];
+            var max_height = (aside_element.clientHeight > main_element.clientHeight) ? aside_element.clientHeight : main_element.clientHeight;
+            aside_element.style.height = max_height + 'px';
+            main_element.style.height = max_height + 'px';
+        }, 500)
+    </script>
+</body>
+</html>
